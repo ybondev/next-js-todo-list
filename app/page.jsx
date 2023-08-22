@@ -9,17 +9,17 @@ import {
   AiOutlineDelete,
 } from "react-icons/ai";
 
-const getData = () => {
-  let list = localStorage.getItem("Data");
-
-  if (list) {
-    return JSON.parse(localStorage.getItem("Data"));
-  } else {
-    return [];
-  }
-};
-
 const page = () => {
+  const getData = () => {
+    let list = localStorage.getItem("Data");
+
+    if (list) {
+      return JSON.parse(localStorage.getItem("Data"));
+    } else {
+      return [];
+    }
+  };
+
   const [value, setValue] = useState("");
   const [items, setItems] = useState(getData());
   const [completed, setCompleted] = useState(false);

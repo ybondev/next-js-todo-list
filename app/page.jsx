@@ -65,13 +65,13 @@ const page = () => {
     <section className="container todo_container">
       <div className="row gy-3">
         <div className="col-md-6">
-          {/* <Image
+          <Image
             src="./assets/undraw_online_calendar_re_wk3t.svg"
             alt="undraw_online_calendar_re_wk3t.svg"
             width={1000}
             height={1000}
             className="img-fluid"
-          /> */}
+          />
         </div>
         <div className="col-md-6">
           <form className="form_container" onSubmit={handleSubmit}>

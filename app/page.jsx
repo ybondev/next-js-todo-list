@@ -137,16 +137,16 @@ const page = () => {
                 );
               })}
             </div>
-            <div className="btn_delete">
-              <div></div>
-              <button onClick={handleDeleteAll}>delete all</button>
-            </div>
-            <div className="dev">
-              <Link href="" className="link">
-                ybon.dev
-              </Link>
-            </div>
           </form>
+          <div className="btn_delete">
+            <div></div>
+            <button onClick={handleDeleteAll}>delete all</button>
+          </div>
+          <div className="dev">
+            <Link href="" className="link">
+              ybon.dev
+            </Link>
+          </div>
         </div>
       </div>
     </section>

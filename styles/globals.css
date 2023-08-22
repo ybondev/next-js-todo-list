@@ -42,6 +42,10 @@ section {
   align-items: center;
 }
 
+.row .col-md-6 {
+  position: relative;
+}
+
 .form_container {
   background: var(--text-color);
   color: var(--primary-bg);
@@ -112,13 +116,13 @@ section {
   color: var(--text-color);
 }
 
-.form_container .btn_delete {
+.btn_delete {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
 
-.form_container .btn_delete button {
+.btn_delete button {
   background: var(--accent-color);
   border: none;
   padding: 10px;
@@ -126,13 +130,13 @@ section {
   font-weight: 700;
 }
 
-.form_container .dev {
+.dev {
   position: absolute;
-  right: 0;
+  right: 10px;
   margin-top: 1rem;
 }
 
-.form_container .dev .link {
+.dev .link {
   color: darkgray;
 }
 

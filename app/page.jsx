@@ -58,16 +58,16 @@ const page = () => {
     addItem();
   };
 
-  // const handleDeleteAll = () => {
-  //   setItems([]);
-  // };
+  const handleDeleteAll = () => {
+    setItems([]);
+  };
 
   return (
     <section className="container todo_container">
       <div className="row gy-3">
         <div className="col-md-6">
           <Image
-            src="/assets/undraw_online_calendar_re_wk3t.svg"
+            src="./assets/undraw_online_calendar_re_wk3t.svg"
             alt="undraw_online_calendar_re_wk3t.svg"
             width={1000}
             height={1000}
@@ -107,10 +107,10 @@ const page = () => {
                 );
               })}
             </div>
-            {/* <div className="btn_delete">
+            <div className="btn_delete">
               <div></div>
               <button onClick={handleDeleteAll}>delete all</button>
-            </div> */}
+            </div>
             <div className="dev">
               <Link href="" className="link">
                 ybon.dev

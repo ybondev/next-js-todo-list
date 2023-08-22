@@ -1,3 +1,5 @@
+"use client";
+
 const Data = (props) => {
   const deleteItem = (id) => {
     console.log(id);

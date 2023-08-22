@@ -58,9 +58,9 @@ const page = () => {
     addItem();
   };
 
-  const handleDeleteAll = () => {
-    setItems([]);
-  };
+  // const handleDeleteAll = () => {
+  //   setItems([]);
+  // };
 
   return (
     <section className="container todo_container">

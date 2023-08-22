@@ -1,5 +1,4 @@
 "use client";
-import Data from "@components/Data";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -53,6 +52,27 @@ const page = () => {
     }
   };
 
+  const deleteItem = (id) => {
+    console.log(id);
+    const updatedItems = items.filter((list, index) => {
+      return index !== id;
+    });
+
+    setItems(updatedItems);
+  };
+
+  const handleCheck = (list) => {
+    setItems(
+      items.map((item) => {
+        if (item.id === list.id) {
+          return { ...item, completed: !item.completed };
+        }
+        console.log(item.id, list.id);
+        return item;
+      })
+    );
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     addItem();
@@ -93,17 +113,25 @@ const page = () => {
             <div className="overflow">
               {items.map((list, index) => {
                 return (
-                  <Data
-                    key={list.id}
-                    AiOutlineCheckCircle={AiOutlineCheckCircle}
-                    AiOutlineDelete={AiOutlineDelete}
-                    items={items}
-                    setItems={setItems}
-                    value={value}
-                    completed={completed}
-                    list={list}
-                    index={index}
-                  />
+                  <div className="data_container mt-2" key={index}>
+                    <div
+                      className={`display ${list.completed ? "complete" : ""}`}
+                    >
+                      <p className={`${list.completed ? "complete" : ""}`}>
+                        {list.name}
+                      </p>
+                      <div className="icon">
+                        <AiOutlineCheckCircle
+                          className="fa_icon"
+                          onClick={() => handleCheck(list)}
+                        />
+                        <AiOutlineDelete
+                          className="fa_icon"
+                          onClick={() => deleteItem(index)}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 );
               })}
             </div>

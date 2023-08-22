@@ -1,6 +1,7 @@
 "use client";
 import Data from "@components/Data";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import {
   AiOutlinePlus,
@@ -66,7 +67,7 @@ const page = () => {
       <div className="row gy-3">
         <div className="col-md-6">
           <Image
-            src="./assets/undraw_online_calendar_re_wk3t.svg"
+            src="/assets/undraw_online_calendar_re_wk3t.svg"
             alt="undraw_online_calendar_re_wk3t.svg"
             width={1000}
             height={1000}

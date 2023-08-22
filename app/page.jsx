@@ -8,25 +8,25 @@ import {
   AiOutlineDelete,
 } from "react-icons/ai";
 
-const getData = () => {
-  let list = localStorage.getItem("Data");
+// const getData = () => {
+//   let list = localStorage.getItem("Data");
 
-  if (list) {
-    return JSON.parse(localStorage.getItem("Data"));
-  } else {
-    return [];
-  }
-};
+//   if (list) {
+//     return JSON.parse(localStorage.getItem("Data"));
+//   } else {
+//     return [];
+//   }
+// };
 
 const page = () => {
   const [value, setValue] = useState("");
-  const [items, setItems] = useState(getData());
+  const [items, setItems] = useState([]);
   const [completed, setCompleted] = useState(false);
   const [isEditItem, setIsEditItem] = useState(null);
 
-  useEffect(() => {
-    localStorage.setItem("Data", JSON.stringify(items));
-  }, [items]);
+  // useEffect(() => {
+  //   localStorage.setItem("Data", JSON.stringify(items));
+  // }, [items]);
 
   const addItem = () => {
     if (!value) {

@@ -113,7 +113,7 @@ const page = () => {
               <AiOutlinePlus className="fa_icon" onClick={addItem} />
             </div>
             <div className="overflow">
-              {items.map((list, index) => {
+              {items?.map((list, index) => {
                 return (
                   <div className="data_container mt-2" key={index}>
                     <div

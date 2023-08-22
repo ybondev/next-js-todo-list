@@ -67,7 +67,7 @@ const page = () => {
       <div className="row gy-3">
         <div className="col-md-6">
           <Image
-            src="/assets/undraw_online_calendar_re_wk3t.svg"
+            src="./assets/undraw_online_calendar_re_wk3t.svg"
             alt="undraw_online_calendar_re_wk3t.svg"
             width={1000}
             height={1000}

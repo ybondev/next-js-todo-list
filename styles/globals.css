@@ -17,3 +17,135 @@ h6 {
   padding: 0;
   font-weight: normal;
 }
+
+:root {
+  --primary-bg: #f5f5f5;
+  --text-color: #121212;
+  --accent-color: #ff7f50;
+}
+
+::-webkit-scrollbar {
+  width: 0rem;
+}
+
+body {
+  background: #121212;
+  color: var(--text-color);
+}
+
+section {
+  padding: 100px 0;
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+}
+
+.form_container {
+  background: var(--text-color);
+  color: var(--primary-bg);
+  padding: 10px;
+  position: relative;
+}
+
+.form_container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form_container h1 span {
+  color: var(--accent-color);
+}
+
+.form_container .input_container .form-control {
+  border-color: transparent;
+  border-radius: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.form_container .input_container .form-control:focus {
+  box-shadow: 0 0 10px var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.form_container .input_container {
+  display: flex;
+  align-items: center;
+}
+
+.form_container .input_container .fa_icon {
+  background: var(--accent-color);
+  width: 40px;
+  height: 38px;
+  margin-left: -1px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.form_container .data_container .display {
+  display: flex;
+  justify-content: space-between;
+  background: var(--accent-color);
+  align-items: center;
+  padding: 10px;
+}
+
+.form_container .data_container .display p {
+  margin-bottom: 0;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.form_container .data_container .display .complete {
+  text-decoration: 3px solid var(--primary-bg) line-through;
+}
+
+.form_container .display.complete {
+  background: darkgray;
+}
+
+.form_container .data_container .display .fa_icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.form_container .btn_delete {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.form_container .btn_delete button {
+  background: var(--accent-color);
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form_container .dev {
+  position: absolute;
+  right: 0;
+  margin-top: 1rem;
+}
+
+.form_container .dev .link {
+  color: darkgray;
+}
+
+.form_container .overflow {
+  height: 100%;
+  min-height: 0px;
+  max-height: 300px;
+  overflow-y: hidden;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 250px 0;
+  }
+}

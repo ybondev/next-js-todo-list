@@ -87,7 +87,6 @@ body {
   height: 38px;
   margin-left: -1px;
   cursor: pointer;
-  color: var(--text-color);
 }
 
 .form_container .data_container .display {
@@ -100,7 +99,6 @@ body {
 
 .form_container .data_container .display p {
   margin-bottom: 0;
-  color: var(--text-color);
   font-weight: 700;
 }
 
@@ -115,7 +113,6 @@ body {
 .form_container .data_container .display .fa_icon {
   font-size: 2rem;
   cursor: pointer;
-  color: var(--text-color);
 }
 
 .btn_delete {
@@ -130,6 +127,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
   font-weight: 700;
+  color: var(--primary-bg);
 }
 
 .dev {

@@ -40,6 +40,10 @@ body {
   flex-direction: column-reverse;
 }
 
+.row .img-fluid {
+  display: none;
+}
+
 .row .col-md-6 {
   position: relative;
 }
@@ -149,5 +153,9 @@ body {
 @media screen and (min-width: 768px) {
   .row {
     flex-direction: row;
+  }
+
+  .row .img-fluid {
+    display: block;
   }
 }

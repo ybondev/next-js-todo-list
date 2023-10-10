@@ -91,8 +91,8 @@ const page = () => {
           <Image
             src="./assets/undraw_online_calendar_re_wk3t.svg"
             alt="undraw_online_calendar_re_wk3t.svg"
-            width={1000}
-            height={1000}
+            width={500}
+            height={0}
             className="img-fluid"
           />
         </div>
